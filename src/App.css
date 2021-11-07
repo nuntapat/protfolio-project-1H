@@ -6,7 +6,7 @@
    --primary-dark: rgba(255,255,255,0);
  }
 body{
-  font-family: "Roboto Condesed" sans-serif;
+  font-family: "Roboto Condesed", sans-serif;
 }
 
 /*-Navbar-*/
@@ -46,3 +46,33 @@ nav ul li{
 .navbar-nav > li > a:hover {
   border-top: 0.1864rem solid var(--primary-orange);
 }
+/*-HEADER-*/
+
+  .header-wraper {
+    position: relative;
+    background:url(../src/pic/wallforT.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 90vh;
+  }
+
+  .main-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: "Roboto Condesed", sans-serif;
+  }
+  
+  .main-info h1 {
+    color:var(--primary-orange);
+    text-transform: uppercase;
+  }
+
+  /*-Type Text-*/
+
+  .typed-text {
+    font-size: 2rem;
+    color: var(--primary-white);
+  }

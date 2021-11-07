@@ -7,10 +7,8 @@ function App() {
 
   return (
     <>
- 
   <Navbar />
   <Header />
-  
   </>
   );
 }
