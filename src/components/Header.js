@@ -11,7 +11,9 @@ const Header = () => {
                 strings={["Web Design","Web Developement","Facebook Ads SMM","Google Ads"]}
                 typeSpeed={40}
                 backSpeed={60}
+                loop
                 />
+                <a href="#" className="btn-main-offer">contact me</a>
             </div>
         </div>
     )
