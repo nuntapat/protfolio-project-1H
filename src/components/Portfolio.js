@@ -85,6 +85,15 @@ const Portfolio = () => {
     </>
    )
     PopupboxManager.open({content})
+    
+    PopupboxManager.update({
+        content,
+        config: {
+          titleBar: {
+            text: "Portfolio",
+          },
+        },
+      });
     }
     
     const popupboxConfigTestpicThree ={
@@ -105,7 +114,9 @@ const Portfolio = () => {
     </>
    )
     PopupboxManager.open({content})
-    const popupboxConfigTestpicThree ={
+    }
+    
+    const popupboxConfigTestpicFour ={
         titleBar:{
             enable: true,
             text: "ITPE Certificate"
@@ -113,19 +124,9 @@ const Portfolio = () => {
         fadeIn: true,
         fadeInSpeed: 500
         }
-    }
-    
-    const popupboxConfigTestpicFour ={
-        titleBar:{
-            enable: true,
-            text: "ITPE CER."
-        },
-        fadeIn: true,
-        fadeInSpeed: 500
-        }
        
     return (
-        <div id="portfolio" className="portfolio-wrapper">
+        <div id="home" className="portfolio-wrapper">
             <div className="container">
                 <h1 className="text-uppercase text-center py-5">portfolio</h1>
                 <div className="image-box-wrapper row justify-content-center">
