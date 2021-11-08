@@ -7,6 +7,7 @@ import AboutMe from "./components/AboutMe";
 import Service from "./components/Service";
 import Experience from "./components/Experience";
 import Portfolio from "./components/Portfolio";
+import Contract from "./components/Contract";
 function App() {
 
   return (
@@ -38,6 +39,7 @@ function App() {
     <Service />
     <Experience />
     <Portfolio />
+    <Contract />
   </>
   );
 }

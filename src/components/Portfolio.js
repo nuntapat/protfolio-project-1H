@@ -3,6 +3,7 @@ import React from "react";
 import testpic from "../pic/Bkk.png"
 import testpic2 from "../pic/Ue4.PNG"
 import testpic3 from "../pic/port.png"
+import testpic4 from "../pic/itpe.png"
 //Font Awesome
 
 import { faSearchPlus } from "@fortawesome/free-solid-svg-icons";
@@ -78,7 +79,7 @@ const Portfolio = () => {
     const openPopupboxTestpicThree = () => {
         const content =(
     <>
-    <img className="portfolio-image-popupbox" src={testpic3} alt="TestpicThree...."/>
+    <img className="portfolio-image-popupbox" src={testpic3} alt="3...."/>
         <p>My Portpolio use react and bootstrap 4 to create.</p>
      <b>Github:</b> <a className="hyper-link" onClick={() => window.open("https://github.com/nuntapat/protfolio-project-1H.git")} >https://github.com/nuntapat/protfolio-project-1H.git</a>
     </>
@@ -90,6 +91,34 @@ const Portfolio = () => {
         titleBar:{
             enable: true,
             text: "Work Collection"
+        },
+        fadeIn: true,
+        fadeInSpeed: 500
+        }
+       
+         //pic4
+    const openPopupboxTestpicFour = () => {
+        const content =(
+    <>
+    <img className="portfolio-image-popupbox" src={testpic4} alt="4...."/>
+        <p>ITPE Certificate.</p>
+    </>
+   )
+    PopupboxManager.open({content})
+    const popupboxConfigTestpicThree ={
+        titleBar:{
+            enable: true,
+            text: "ITPE Certificate"
+        },
+        fadeIn: true,
+        fadeInSpeed: 500
+        }
+    }
+    
+    const popupboxConfigTestpicFour ={
+        titleBar:{
+            enable: true,
+            text: "ITPE CER."
         },
         fadeIn: true,
         fadeInSpeed: 500
@@ -123,11 +152,18 @@ const Portfolio = () => {
                     <div className="overflow"></div>
                     <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus} />
                 </div>
+                {/* */}
+                <div className="portfolio-image-box" onClick={openPopupboxTestpicFour}>
+                    <img className="portfolio-image" src={testpic4} alt="Test picture on website.."/>
+                    <div className="overflow"></div>
+                    <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus} />
+                </div>
                 </div>
             </div>
             <PopupboxContainer {...popupboxConfigTestpicOne}/>
             <PopupboxContainer {...popupboxConfigTestpicTwo}/>
             <PopupboxContainer {...popupboxConfigTestpicThree}/>
+            <PopupboxContainer {...popupboxConfigTestpicFour}/>
            
         </div>
     )
