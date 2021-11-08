@@ -15,7 +15,9 @@ body{
 .logo {
   width: 16.25rem;;
 }
+nav{
 
+}
 /*-Menu Link-*/
 nav a.nav-link{
   font-size: .9rem;
@@ -39,6 +41,12 @@ nav ul li{
   max-width: 17.25rem;
   padding: 0 !important;
   height: 6rem;
+}
+
+@media(max-width: 768px){
+  .navbar-brand{
+    width: 7rem;
+}
 }
 
 .navbar-nav > li > a.active, .navbar-nav > li > a.active:focus {
@@ -65,12 +73,13 @@ nav ul li{
     left: 0;
     right: 0;
     bottom: 0;
-    
+
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
     font-family: "Roboto Condesed", sans-serif;
+    z-index: 1;
   }
   
   .main-info h1 {
@@ -78,11 +87,22 @@ nav ul li{
     text-transform: uppercase;
   }
 
+ 
+
+
   /*-Type-Text-*/
 
   .typed-text {
     font-size: 2rem;
     color: var(--primary-white);
+  }
+  @media(max-width: 768px){
+    .main-info h1{
+      font-size: 1.5rem !important;
+    }
+    .typed-text{
+      font-size: 1.3rem !important;
+    }
   }
 
  /*-Header main offer button-*/
@@ -93,4 +113,24 @@ nav ul li{
     padding: 0.625rem 0.75rem 0.75rem 0.75rem;
     color: var(--primary-white);
     margin: 2rem;
+  }
+  .btn-main-offer:hover {
+    text-decoration: none;
+    background-color: var(--primary-hover-red);
+    transition: 2s ease-in-out;
+  }
+
+/*-Particles Js-*/
+  .tsparticles-canvas-el {
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    z-index: 1;
+
+  }
+
+  @media(max-width: 768px){
+    .particles-canvas{
+      display: none;
+    }
   }
