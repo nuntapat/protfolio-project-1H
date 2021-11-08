@@ -1,11 +1,10 @@
 import React from "react";
 import  {FontAwesomeIcon}  from "@fortawesome/react-fontawesome";
-import  {faGoogle}  from "@fortawesome/free-brands-svg-icons";
 import { faDesktop, faDiceD20, faFileCode } from "@fortawesome/free-solid-svg-icons";
 
 const Service = () => {
     return (
-        <div className="services">
+        <div id="services" className="services">
             <h1 className="py-5">Skill</h1>
                 <div className="container">
                     <div className="row">

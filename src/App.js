@@ -8,11 +8,12 @@ import Service from "./components/Service";
 import Experience from "./components/Experience";
 import Portfolio from "./components/Portfolio";
 import Contract from "./components/Contract";
+import Footer from "./components/Footer";
 function App() {
 
   return (
     <>
-    <Particles 
+    {/* <Particles 
     className="particles-canvas"
       params={{
         particles : {
@@ -32,7 +33,7 @@ function App() {
           }
         }
       }}
-      />
+      /> */}
     <Navbar />
     <Header />
     <AboutMe />
@@ -40,6 +41,7 @@ function App() {
     <Experience />
     <Portfolio />
     <Contract />
+    <Footer />
   </>
   );
 }

@@ -1,5 +1,6 @@
 import React from "react";
 import logo from "../pic/Logo.png";
+import {Link} from "react-scroll";
 // REACT FONTAWESOME IMPORTS
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {faBars} from "@fortawesome/free-solid-svg-icons";
@@ -18,21 +19,21 @@ const Navbar = () => {
       <div className="collapse navbar-collapse" id="navbarSupportedContent">
         <ul className="navbar-nav ml-auto ">
           <li className="nav-item active">
-            <a className="nav-link" href="#">Home <span className="sr-only">
-            </span></a>
+            <Link smooth={true} to="home" className="nav-link" href="#">Home <span className="sr-only">
+            </span></Link>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="#">About Me</a>
+            <Link smooth={true} to="about" className="nav-link" href="#">About Me</Link>
           </li>
               <li className="nav-item">
-            <a className="nav-link" href="#">Skill</a>
+            <Link smooth={true} to="services" className="nav-link" href="#">Skill</Link>
           </li>  <li className="nav-item">
-            <a className="nav-link" href="#">experience</a>
+            <Link smooth={true} to="experience" className="nav-link" href="#">experience</Link>
           </li><li className="nav-item">
-            <a className="nav-link" href="#">portfolio</a>
+            <Link smooth={true} to="portfolio" className="nav-link" href="#">portfolio</Link>
             </li>
             <li className="nav-item">
-            <a className="nav-link" href="#">Contact</a>
+            <Link smooth={true}  to="contacts" className="nav-link" href="#">Contact</Link>
             </li>
 
 
